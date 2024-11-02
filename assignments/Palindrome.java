@@ -14,19 +14,19 @@ public class Palindrome{
                         				 int remainder = 0;
 				                          int reversedNumber = 0;
 
-               				while(number != 0){
+               				while(number > 0){
                                    		remainder =  number % 10;
 						reversedNumber = reversedNumber * 10 + remainder;
 						number = number / 10;
 } 
 
-if(originalNum == reversedNumber){
-	System.out.println("It is a palindrome");
+					if(originalNum == reversedNumber){
+						System.out.println("It is a palindrome");
 }
 
-else{
+					else{
 
-	System.out.println("it is not a palindrome");
+						System.out.println("it is not a palindrome");
 }          
 }
 }
