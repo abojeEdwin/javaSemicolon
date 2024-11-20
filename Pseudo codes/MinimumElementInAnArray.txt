@@ -1,0 +1,7 @@
+pseudo code foe minimum elements in an array
+1)declare an array with elements in it
+2) name it exampleinput and save it
+3)create a variable and name it mini and assign the first value of exampleinput to it
+4)loop through exampleinput
+5) perform if exampleinput is less than mini then mini is equal to exampleinput
+6)display mini

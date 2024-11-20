@@ -1,0 +1,7 @@
+psudeo codeo for maximum element in an array
+
+1)declare an array and name it max
+2)declare a variable and name it max_array
+3)loop through the the length of max
+4)perform if the length of array > max_array, max_array is equal to max
+5)display max_array 

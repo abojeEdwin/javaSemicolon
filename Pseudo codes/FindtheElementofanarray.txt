@@ -1,0 +1,8 @@
+Psuedo code  to find an element in an array
+
+1) import the class scanner to collect input
+2) prompt user to enter an input and save it element
+2) declare an array of any length 
+3) name it exampleinput and save
+4) loop through exampleinput
+5) perform if exampleinput == element print true else print false

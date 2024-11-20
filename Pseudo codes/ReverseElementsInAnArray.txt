@@ -1,0 +1,5 @@
+pseudo code to reverse the elements in an array
+1)declare an array with elements in it
+2)name it exampleinput and save it
+3)loop through exampleinput starting from the back
+4)display exampleinput
