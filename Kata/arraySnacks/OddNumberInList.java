@@ -4,7 +4,7 @@ public class OddNumberInList{
 
 	public static void main(String[] args){
 
-		List <Integer> numbers = List.of(20,90,55,58,100,36);
+		List <Integer> numbers = List.of(20,90,55,58,7,36,11);
 		getEvenInList(numbers);
 			
 	}
@@ -12,12 +12,13 @@ public class OddNumberInList{
 			for(int num : numbers){
 				if(num % 2 != 0){
 					System.out.println(num);
-				}
+			
 			
 
-
+				}
+						
 			}
-
+			
 		
 		}
 
