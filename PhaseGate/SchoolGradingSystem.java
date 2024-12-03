@@ -11,37 +11,33 @@ public class SchoolGradingSystem{
 
 	ArrayList<Integer> Studentamount = new ArrayList<Integer>();
 	ArrayList<Integer> Subject = new ArrayList<Integer>();	
-	ArrayList<Integer> StudentScore = new ArrayList<Integer>();
-
+	
 		System.out.println("How many students do you have ?");
 		int numberOfStudent = input.nextInt();
 		
 		System.out.println("How many subjects do they offer ?");
 		int numberOfSubject = input.nextInt();
-		
+
 		System.out.println("Saving>>>>>>>>>>>>>>>>>");
-		
 		System.out.println("Saved Successfully ");
 		
 		int studentcounter = 0;
-		System.out.println("Entering score for student 1");
+			System.out.println("Entering score for student 1");
+			ArrayList<Integer> StudentScore = new ArrayList<Integer>();
 
-		while(studentcounter != numberOfStudent){
+			while(studentcounter != numberOfStudent){
 
-
-		System.out.print("Entering Score for subject 1 :");
-		int studentscore = input.nextInt();
-			studentcounter++;
-					}
-		System.out.println("Saving>>>>>>>>>>>>>");
-		System.out.println("Saved Successfully");
-
-		ArrayList<Integer> StudentScore;
-		for(int i = 0; i < studentscore.Length; i++){
-			StudentScore.add(studentscore[i]);
-				}
+				System.out.print("Entering Score for subject 1 :");
+					int studentscore = input.nextInt();	
+					for(int i = 0; i < studentscore; i++){
+						StudentScore.add(i);						
+						}
+					studentcounter++;
+						}
+						System.out.println("Saving>>>>>>>>>>>>>");
+						System.out.println("Saved Successfully");
 		 
-
+					
 
 
 
