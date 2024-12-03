@@ -22,6 +22,24 @@ public class SchoolGradingSystem{
 		System.out.println("Saving>>>>>>>>>>>>>>>>>");
 		
 		System.out.println("Saved Successfully ");
+		
+		int studentcounter = 0;
+		System.out.println("Entering score for student 1");
+
+		while(studentcounter != numberOfStudent){
+
+
+		System.out.print("Entering Score for subject 1 :");
+		int studentscore = input.nextInt();
+			studentcounter++;
+					}
+		System.out.println("Saving>>>>>>>>>>>>>");
+		System.out.println("Saved Successfully");
+
+		ArrayList<Integer> StudentScore;
+		for(int i = 0; i < studentscore.Length; i++){
+			StudentScore.add(studentscore[i]);
+				}
 		 
 
 
