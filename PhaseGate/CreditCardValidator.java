@@ -16,6 +16,7 @@ public class CreditCardValidator{
 
 			if(numbers.length >=13 && numbers.length<=16){
 				checkPrefix(numbers);
+				displayCreditCardLength(numbers);
 				}else{
 					System.out.println("Invalid card numbers");
 					System.out.println("The length must be between 13 and 16");
@@ -37,6 +38,17 @@ public class CreditCardValidator{
 		
 				return numbers;
 				}
+			public static void displayCreditCardLength(String[] numbers){
+
+					if(numbers.length >= 13 && numbers.length >=16){
+							System.out.printf("%n%s %d%n","Credit Card Digit Length : ", numbers.length);
+						}
+
+
+
+
+
+}
 
 
 
