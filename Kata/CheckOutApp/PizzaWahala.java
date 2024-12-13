@@ -15,7 +15,7 @@ import java.lang.Math;
 
 		1. Sapa Size			        	4			                 2,000			
 		
-		2. Small Money			   	    	6			               	 2,400			
+		2. Small Money			   		6			               	 2,400			
 		
 		3. Big Boys				      	8				         3,000			
 	
@@ -28,9 +28,8 @@ import java.lang.Math;
 
 	(pick options 1-4).
 			""");
-
-				Scanner input = new Scanner(System.in);
-				int typeChosen = input.nextInt();
+					Scanner input = new Scanner(System.in);
+					int typeChosen = input.nextInt();
 
 				switch(typeChosen){
 			

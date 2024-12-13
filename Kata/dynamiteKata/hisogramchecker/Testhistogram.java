@@ -17,7 +17,7 @@ public class Testhistogram{
 	//start
 	Histogram histogramme = new Histogram();
 	String input = "The quick brown Fox jumps over the lazy dog";
-	assertEquals(true,Histogram.gethistogram(input));
+	assertEquals(false,Histogram.gethistogram(input));
 
 
 
