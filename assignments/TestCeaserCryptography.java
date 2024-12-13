@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestCeaserCryptography{
-	
+	@Test
 	public void CipherEncryptedMsgReturunsCorrectValue(){
 	//start
 	CeaserCryptography cipherEncrypted = new CeaserCryptography();
