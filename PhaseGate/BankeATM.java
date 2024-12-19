@@ -173,6 +173,7 @@ public static void main(String[] args){
                   System.out.println("Enter your new pin");
                   String newPin = input.nextLine();
                   pin.set(count, resetPin);
+                  System.out.println("Pin changed successfully");
                   System.out.println("Press 1 to go back to main menu or 8 to exit : \n");
                   choice = input.nextInt(); input.nextLine();
     
