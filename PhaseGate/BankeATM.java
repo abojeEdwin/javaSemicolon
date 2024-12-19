@@ -13,12 +13,12 @@ public class BankeATM{
 public static void main(String[] args){
        Scanner input = new Scanner(System.in); 
           
-          int starter = 0;
+          int choice = 0;
           
-         while(starter != 1){
+         while(choice != 8){
          
        System.out.println("Welcome to Banke ATM \n1.Create Account\n2.Close Account\n3.Deposit Money\n4.Withdraw Money\n5.Check Account Balance\n6.Transfer\n7.Change Pin\n8.Exit");
-       int choice = input.nextInt(); input.nextLine();
+       choice = input.nextInt(); input.nextLine();
          
           if(choice ==1){
               System.out.println("Open Account");
@@ -162,17 +162,32 @@ public static void main(String[] args){
                         }
                     }
                   
-                  
-                  
-                  
-                  
-                  
+          if(choice == 7){
+              System.out.println("Change Pin");
+              System.out.print("Enter your old pin");
+              String resetPin = input.nextLine();
+              
+              int count = pin.indexOf(resetPin);
+              
+              if(count != -1){
+                  System.out.println("Enter your new pin");
+                  String newPin = input.nextLine();
+                  pin.set(count, resetPin);
+                  System.out.println("Press 1 to go back to main menu or 8 to exit : \n");
+                  choice = input.nextInt(); input.nextLine();
+    
+              }else{
+                System.out.println("Incorrect pin, please enter a valid pin");
+                System.out.println("Press 1 to go back to main menu or 8 to exit : \n");
+                choice = input.nextInt(); input.nextLine();
+                      } 
+                      }  
+                      
+            if(choice == 8){
+                System.out.println("Exiting>>>");
+                      }          
+                  }
                 }
-                }
-          
-     
-      
-      
     
   public static String generateAccountNumber(){
     String accountNumber = "";
@@ -182,7 +197,5 @@ public static void main(String[] args){
                    }
               return accountNumber; 
                }
-               
-
-}
+        }
 
