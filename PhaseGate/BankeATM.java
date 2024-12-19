@@ -38,11 +38,8 @@ public static void main(String[] args){
               System.out.print("Enter initial deposit amount : ");
               double initDepo = input.nextDouble();
               balance.add(initDepo);
-              
-              System.out.println("Account Created Successfully.");
-              
-             
               System.out.println("This is your account number " + accountNumber);
+              System.out.println("Account Created Successfully.");
               System.out.print("Press 1 to go back to main menu or 8 to exit : ");
               choice = input.nextInt(); input.nextLine();
               
@@ -110,11 +107,35 @@ public static void main(String[] args){
                 System.out.println("Invalid Pin, Please Enter A Valid Pin");
                 System.out.println("Press 1 to go back to main menu or 8 to exit : \n");
                 choice = input.nextInt(); input.nextLine();
-                }
-              }
-              }
-              }
-                
+                              }
+                            }
+                          }
+                        }
+            
+          if(choice == 5){
+                System.out.println("Check Account Balance");
+                  System.out.print("Enter your pin");
+                  String checkAccountPin = input.nextLine();
+                  int index = pin.indexOf(checkAccountPin);
+                  double countBalance = balance.get(index);
+                  if(index != -1){
+                      System.out.println("$"+countBalance);
+                      System.out.println("Press 1 to go back to main menu or 8 to exit : \n");
+                      choice = input.nextInt(); input.nextLine();
+                  }else{
+                      System.out.println("Incorrect Pin, Please Try Again");
+                      System.out.println("Press 1 to go back to main menu or 8 to exit : \n");
+                      choice = input.nextInt(); input.nextLine();
+                      }
+                      }
+                      
+                  
+                  
+                  
+                  
+                  
+                  
+                  
                 }
                 }
           
