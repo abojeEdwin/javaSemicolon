@@ -114,7 +114,7 @@ public static void main(String[] args){
             
           if(choice == 5){
                 System.out.println("Check Account Balance");
-                  System.out.print("Enter your pin");
+                  System.out.print("Enter your pin :");
                   String checkAccountPin = input.nextLine();
                   int index = pin.indexOf(checkAccountPin);
                   double countBalance = balance.get(index);
@@ -129,7 +129,38 @@ public static void main(String[] args){
                       }
                       }
                       
+          
+          if(choice == 6){
+              System.out.println("Transfer");
+              System.out.print("Enter your pin :");
+              String transferPin = input.nextLine();
+              
+              int index = pin.indexOf(transferPin);
+              double transferBalance = balance.get(index);
+              double recepientBalance = 0.0;
+              if(index != -1){
+                  System.out.println("Enter the account number :");
+                  String recepientAccount = input.nextLine();
+                  System.out.println("Enter Transfer Amount");
+                  double transferAmount = input.nextDouble();
                   
+                  if(transferAmount <= transferBalance){
+                  double transferAction = transferAmount - transferBalance;
+                  double transfer = transferAmount + recepientBalance;
+                  System.out.println("Transfer successful.");
+                  System.out.println("Press 1 to go back to main menu or 8 to exit : \n");
+                  choice = input.nextInt(); input.nextLine();    
+              }else if(transferAmount >= transferBalance){
+                  System.out.println("Insufficient fund");
+                  System.out.println("Press 1 to go back to main menu or 8 to exit : \n");
+                  choice = input.nextInt(); input.nextLine();
+              }else{
+                  System.out.println("Incorrect Pin");
+                  System.out.println("Press 1 to go back to main menu or 8 to exit : \n");
+                  choice = input.nextInt(); input.nextLine();
+                          }
+                        }
+                    }
                   
                   
                   
