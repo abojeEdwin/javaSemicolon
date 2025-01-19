@@ -1,0 +1,7 @@
+pseudo code for sum of an element in an array
+
+1)declare an array of any length
+2)name it exampleinput
+3)create a variable name it sum
+4) loop through exampleinput and add to sum
+5)display sum

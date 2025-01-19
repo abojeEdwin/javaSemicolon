@@ -57,7 +57,7 @@ public class DiaryUser {
               diary.UpdateDiary(entry);
               }
           if(choice == 8){
-              System.out.print("Enter your dairyId" :);
+              System.out.print("Enter your dairyId :");
               viewEntryId  = scanner.nextLine(); scanner.nextLine();
 
             if(viewEntryId == diaryID) {

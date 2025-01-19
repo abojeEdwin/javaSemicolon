@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Kata/Kata.iml" filepath="$PROJECT_DIR$/Kata/Kata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kata/dynamiteKata/dynamiteKata.iml" filepath="$PROJECT_DIR$/Kata/dynamiteKata/dynamiteKata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaSemicolon.iml" filepath="$PROJECT_DIR$/javaSemicolon.iml" />
+    </modules>
+  </component>
+</project>
