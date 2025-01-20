@@ -3,9 +3,14 @@ package airConditionerTest;
 public class Airconditioner {
 
 
-    int temperature;
-    int thermostatHighTemperature = 30;
-    int thermostatLowTemperature = 16;
+   private int temperature;
+   final int thermostatHighTemperature;
+   final int thermostatLowTemperature;
+
+    public Airconditioner() {
+        this.thermostatHighTemperature = 30;
+        this.thermostatLowTemperature = 16;
+    }
 
 
     public boolean isAirconOn() {
@@ -36,4 +41,5 @@ public class Airconditioner {
     public int setLowestTemperatureRange(int temperature) {
         return thermostatLowTemperature;
     }
+
 }
