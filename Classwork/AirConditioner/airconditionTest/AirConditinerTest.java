@@ -1,20 +1,26 @@
 import airConditionerTest.Airconditioner;
 import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
 
 import static org.testng.AssertJUnit.*;
 
 
 public class AirConditinerTest {
 
+    Airconditioner breeze = new Airconditioner();
+
+    @BeforeEach
+    void setUp(){
+        breeze = new Airconditioner();
+    }
+
     @Test
     public void testThatAircondionComesOnWhenTurnedOn(){
-        Airconditioner breeze = new Airconditioner();
         assertTrue(breeze.isAirconOn());
     }
 
     @Test
     public void testThatAircondionComesOnWhenTurnedOff(){
-        Airconditioner breeze = new Airconditioner();
         assertTrue(breeze.isAirconOn());
 
         assertFalse(breeze.isAirconOff());
@@ -22,7 +28,6 @@ public class AirConditinerTest {
 
     @Test
     public void testThatAirconditionTemperatureIsSet(){
-        Airconditioner breeze = new Airconditioner();
         assertTrue(breeze.isAirconOn());
         assertFalse(breeze.isAirconOff());
 
@@ -31,7 +36,6 @@ public class AirConditinerTest {
 
     @Test
     public void testThatAirconditionCanIncreaseTemperature(){
-        Airconditioner breeze = new Airconditioner();
         assertTrue(breeze.isAirconOn());
         assertFalse(breeze.isAirconOff());
         assertEquals(30,breeze.setAirconTemperature());
@@ -41,12 +45,11 @@ public class AirConditinerTest {
 
     @Test
     public void testThatAirconditionCanDecreaseTemperature(){
-        Airconditioner breeze = new Airconditioner();
         assertTrue(breeze.isAirconOn());
         assertFalse(breeze.isAirconOff());
         assertEquals(30,breeze.setAirconTemperature());
-        breeze.increaseAirConTemp(10);
-        assertEquals(10,breeze.increaseAirConTemp(10));
+        breeze.increaseAirConTemp(30);
+        assertEquals(30,breeze.increaseAirConTemp(30));
 
         assertEquals(16,breeze.decreaseAirconTemp(16));
     }
@@ -54,12 +57,11 @@ public class AirConditinerTest {
 
     @Test
     public void testThatAirconTemperatureFromUserDoestGoAboveSetTemperature(){
-        Airconditioner breeze = new Airconditioner();
         assertTrue(breeze.isAirconOn());
         assertFalse(breeze.isAirconOff());
         assertEquals(30,breeze.setAirconTemperature());
         assertEquals(30,breeze.increaseAirConTemp(30));
-        assertEquals(16,breeze.increaseAirConTemp(16));
+        assertEquals(30,breeze.increaseAirConTemp(30));
 
 
         breeze.increaseAirConTemp(30);
@@ -70,7 +72,6 @@ public class AirConditinerTest {
 
     @Test
     public void testThatAirconTemperatureFromUserDoesNotGoBelowSetTemperature(){
-        Airconditioner breeze = new Airconditioner();
         assertTrue(breeze.isAirconOn());
         assertFalse(breeze.isAirconOff());
         assertEquals(30,breeze.setAirconTemperature());

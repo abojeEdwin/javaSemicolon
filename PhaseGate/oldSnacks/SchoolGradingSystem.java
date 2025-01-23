@@ -5,6 +5,8 @@ public class SchoolGradingSystem{
 	public static void main(String[] args){
 	
 	Scanner input = new Scanner(System.in);
+
+		System.out.println("Welcome to Lagbaja School!\n");
    
 		System.out.println("How many students do you have ?");
 		int numberOfStudent = input.nextInt();
@@ -12,8 +14,8 @@ public class SchoolGradingSystem{
 		System.out.println("How many subjects do they offer ?");
 		int numberOfSubject = input.nextInt();
 
-		System.out.println("Saving>>>>>>>>>>>>>>>>>");
-		System.out.println("Saved Successfully ");
+		System.out.println("Saving>>>>>>>>>>>>>>>>>\n");
+		System.out.println("Saved Successfully \n");
 
 		int [] [] student = new int [numberOfStudent][numberOfSubject];
 		int [] total = new int[numberOfStudent];
@@ -69,20 +71,5 @@ public class SchoolGradingSystem{
 							System.out.println();
 							
 				}
-
-
-
-
-
-
-
-
-
-
 }
 }
-
-
-
-
-

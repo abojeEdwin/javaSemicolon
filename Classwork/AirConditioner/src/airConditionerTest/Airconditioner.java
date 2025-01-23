@@ -8,6 +8,7 @@ public class Airconditioner {
    final int thermostatLowTemperature;
 
     public Airconditioner() {
+        this.temperature=temperature;
         this.thermostatHighTemperature = 30;
         this.thermostatLowTemperature = 16;
     }
@@ -27,10 +28,16 @@ public class Airconditioner {
     }
 
     public int increaseAirConTemp(int temperature) {
+        if(temperature >= thermostatHighTemperature) {
+            return thermostatHighTemperature;
+        }
         return temperature++;
     }
 
     public int decreaseAirconTemp(int temperature) {
+        if(temperature <= thermostatLowTemperature) {
+            return thermostatLowTemperature;
+        }
         return temperature--;
     }
 

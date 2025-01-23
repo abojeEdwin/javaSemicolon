@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class GasMileage{
+public class GasMilage{
 		public static void main(String[] args){
 	Scanner input = new Scanner(System.in);
 
@@ -8,9 +8,9 @@ public class GasMileage{
 	int trip = 0;
 
 		System.out.println("Enter a number");
-		int input = input.nextInt();
+		int number = input.nextInt();
 
-		while (input != 0) {
+		while (number != 0) {
 
 		System.out.println("Enter a number");
 		int miles = input.nextInt();
@@ -32,7 +32,7 @@ public class GasMileage{
 		trip++;
 		}
 
-		if(trips > 0) {
+		if(trip > 0) {
 			double combinedmilespergallon = (double) totalmiles / totalgallons;
 			System.out.print("Combined miles per gallon for all trips is " + combinedmilespergallon);
 		}else {

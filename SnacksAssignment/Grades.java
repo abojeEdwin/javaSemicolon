@@ -8,11 +8,11 @@ import java.util.Scanner;
 
 		if(grades < 50){
 			System.out.println("D");
-		}if(grades >= 50 || <= 60){
+		}if(grades >= 50 || grades <= 60){
 			System.out.println("C");
-		}if(grades > 60 || <= 80){
+		}if(grades > 60 || grades <= 80){
 			System.out.println("B");
-		}if(grades > 80 || <= 100){
+		}if(grades > 80 || grades <= 100){
 			System.out.println("A");
 			}
 			

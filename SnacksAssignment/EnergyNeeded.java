@@ -2,7 +2,7 @@ import java.util.Scanner;
 	public class EnergyNeeded{
 		public static void main(String[] args){
 
-		Scanner input = new Scanner(System.in;)
+		Scanner input = new Scanner(System.in);
 
 		System.out.print("Enter amount of water in kilogram :");
 		double amount = input.nextDouble;

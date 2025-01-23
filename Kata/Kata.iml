@@ -9,14 +9,11 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="CheckOutApp" level="project" />
-    <orderEntry type="library" name="hisogramchecker" level="project" />
-    <orderEntry type="library" name="assignments2" level="project" />
-    <orderEntry type="library" name="assignments" level="project" />
-    <orderEntry type="library" name="javaSemicolon" level="project" />
-    <orderEntry type="library" name="assignments3" level="project" />
+    <orderEntry type="library" name="Kata" level="project" />
     <orderEntry type="library" name="junit-2" level="project" />
+    <orderEntry type="library" name="hisogramchecker" level="project" />
     <orderEntry type="library" name="junit-" level="project" />
+    <orderEntry type="library" name="CheckOutApp" level="project" />
     <orderEntry type="library" name="primechecker" level="project" />
   </component>
 </module>

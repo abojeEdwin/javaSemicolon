@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="CheckOutApp">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/CheckOutApp/junit-jupiter-api-5.11.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CheckOutApp/junit-platform-commons-1.11.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CheckOutApp/junit-platform-console-standalone-1.11.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CheckOutApp/apiguardian-api-1.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CheckOutApp/opentest4j-1.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

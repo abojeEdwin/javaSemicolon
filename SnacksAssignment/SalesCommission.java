@@ -8,6 +8,7 @@ public class SalesCommission{
 		double totalsales = 0.0;
 
 	System.out.println("Enter the value of items(or 0 to quit)");
+	int itemvalue = input.nextInt();
 		while(itemvalue != 0){
 	double itemvalue = input.nextDouble();
 

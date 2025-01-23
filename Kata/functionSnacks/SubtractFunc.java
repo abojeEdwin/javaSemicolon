@@ -1,3 +1,6 @@
+public class SubtractFunc {
+
+
 	public static int subtractFunc(int number1,int number2){
 
 		return Math.abs(number1-number2);
@@ -13,4 +16,5 @@
 
 
 
+}
 }
