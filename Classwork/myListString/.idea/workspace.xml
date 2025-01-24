@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectId" id="2s3lk1GHYyoEiknhCKjxXbehowf" />
+  <component name="RunManager" selected="JUnit.MyListStringTest">
+    <configuration name="MyListStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myListString" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dsa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dsa" />
+      <option name="MAIN_CLASS_NAME" value="dsa.MyListStringTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyListStringTest.testThatMyListIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myListString" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dsa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dsa" />
+      <option name="MAIN_CLASS_NAME" value="dsa.MyListStringTest" />
+      <option name="METHOD_NAME" value="testThatMyListIsEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MyListStringTest" />
+        <item itemvalue="JUnit.MyListStringTest.testThatMyListIsEmpty" />
+      </list>
+    </recent_temporary>
+  </component>
+</project>
