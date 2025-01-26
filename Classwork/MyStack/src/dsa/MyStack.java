@@ -2,7 +2,7 @@ package dsa;
 
 public class MyStack {
     int stack [] = new int [6];
-    private int size = 0;
+    int size = 0;
     int top = 0;
 
     public boolean isEmpty() {
@@ -10,16 +10,23 @@ public class MyStack {
     }
 
     public void push(int item) {
-        stack[top++] = item;
-        size++;
+        if(isFull()) {
+            System.out.println("Stack is full");
+        }else{
+            stack[top++] = item;
+            size++;
+        }
     }
 
-    public int pop() {
-        int item;
-        item = stack[top - 1];
-        stack[top] = 0;
-        size--;
-        return item;
+    public void pop() {
+        if(isEmpty()) {
+            System.out.println("Stack is empty");
+        } else {
+            int item;
+            item = stack[top - 1];
+            stack[top] = 0;
+            size--;
+        }
     }
 
     public int size(){
@@ -39,4 +46,7 @@ public class MyStack {
             return item;
     }
 
+    public boolean isFull() {
+        return size == stack.length;
+    }
 }

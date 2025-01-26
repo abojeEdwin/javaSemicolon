@@ -51,7 +51,7 @@ public class MyLinkedListTest {
     }
 
     @Test
-    public void testThatMyLinkedLinkedListCanDelete(){
+    public void testThatMyLinkedListCanDelete(){
         linkedList.insertItem(5);
         linkedList.insertItem(10);
         linkedList.insertItem(15);

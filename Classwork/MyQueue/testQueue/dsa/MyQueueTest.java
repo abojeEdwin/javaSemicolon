@@ -15,7 +15,8 @@ public class MyQueueTest {
 
     @Test
     public void testThatMyQueueIsEmpty(){
-        myQueue.isEmpty();
+        myQueue.enterQueue(15);
+        assertFalse(myQueue.isEmpty());
     }
 
     @Test

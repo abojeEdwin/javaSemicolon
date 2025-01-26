@@ -2,9 +2,9 @@ package dsa;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+
 
 public class MyStackTest {
     MyStack myStack = new MyStack();
@@ -61,6 +61,31 @@ public class MyStackTest {
         myStack.pop();
         myStack.pop();
         assertEquals(1,myStack.size());
+    }
+
+    @Test
+    public void testThatMyStackReturnsCorrectValueWhenCheckedIsEmpty(){
+         myStack.push(10);
+         myStack.push(20);
+        assertFalse(myStack.isEmpty());
+    }
+
+    @Test
+    public void testThatMyStackIsFull(){
+        myStack.push(10);
+        myStack.push(20);
+        myStack.push(30);
+        myStack.push(90);
+        myStack.push(80);
+        myStack.push(70);
+        myStack.push(60);
+        myStack.isFull();
+
+    }
+
+    @Test
+    public void testThatMyStackHandlesExceptionWhenUserTrysToPopWhenEmpty(){
+        myStack.pop();
     }
 
 

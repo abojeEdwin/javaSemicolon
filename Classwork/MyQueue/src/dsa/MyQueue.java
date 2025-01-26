@@ -4,8 +4,8 @@ public class MyQueue {
 
     int queue[] = new int[5];
     private int size = 0;
-    int front;
-    int rear;
+    int head;
+    int tail;
 
     public boolean isEmpty() {
         return size() == 0;
@@ -16,8 +16,8 @@ public class MyQueue {
 
     public void enterQueue(int item) {
         if(!isFull()) {
-            queue[rear] = item;
-            rear = rear + 1 % 5;
+            queue[tail] = item;
+            tail = tail + 1 % 5;
             size++;
         }
         else {
@@ -27,14 +27,14 @@ public class MyQueue {
 
     public void monstrar() {
         for(int i = 0; i < size; i++){
-            System.out.print(queue[(front + i) %5 ] + " ");
+            System.out.print(queue[(head + i) %5 ] + " ");
         }
     }
 
     public int deQueue() {
-            int item = queue[front];
+            int item = queue[head];
             if(!isEmpty()) {
-                front = front + 1 % 5;
+                head = head + 1 % 5;
                 size--;
         }
         else System.out.println("Queue is empty");
