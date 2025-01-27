@@ -24,7 +24,7 @@ public class Customer {
 
     public float getPayment(float bills) {
         if(myWallet != null) {
-            if(myWallet.getTotalMoney() >= bills) {
+            if(myWallet.getTotalMoney() > bills) {
                 myWallet.subMoney(bills);
                 return bills;
             }
