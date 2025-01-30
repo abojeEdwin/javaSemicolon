@@ -18,15 +18,19 @@ public class MyStack {
         }
     }
 
-    public void pop() {
-        if(isEmpty()) {
+    public int pop() {
+        int item = 0;
+        if (isEmpty()) {
             System.out.println("Stack is empty");
         } else {
-            int item;
-            item = stack[top - 1];
+            top--;
+            item = stack[top];
             stack[top] = 0;
             size--;
+
         }
+        return item;
+
     }
 
     public int size(){
