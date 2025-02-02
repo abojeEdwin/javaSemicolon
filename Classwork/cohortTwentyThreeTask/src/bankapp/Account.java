@@ -8,14 +8,16 @@ public class Account {
     private String accountNumber;
     private String accountName;
 
-
-    public void Account(String accountName, String pin, String accountNumber) {
-        this.pin = pin;
+    public Account(String accountName, String pin, String accountNumber) {
         this.accountName = accountName;
+        this.pin = pin;
         this.accountNumber = accountNumber;
     }
 
     public void setPin(String pin) {
+        if(pin==null|| pin.isEmpty()){
+            throw new IllegalArgumentException("Pin cannot be null or empty");
+        }
         this.pin = pin;
     }
 
@@ -36,7 +38,7 @@ public class Account {
            return this.balance;
     }
 
-    public void withdraw(int amount, String pin) throws IllegalArgumentException {
+    public void withdraw(double amount, String pin) throws IllegalArgumentException {
        if(!pin.equals(this.pin)){
            throw new IllegalArgumentException("Invalid pin");
        }
@@ -51,6 +53,9 @@ public class Account {
     }
 
     public void setName(String accountName) {
+        if(accountName == null||accountName.isEmpty()){
+            throw new IllegalArgumentException("Account name cannot be null or empty");
+        }
         this.accountName = accountName;
     }
 

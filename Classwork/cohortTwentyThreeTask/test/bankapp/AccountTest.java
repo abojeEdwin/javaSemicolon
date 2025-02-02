@@ -5,12 +5,11 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class AccountTest {
-    Account account = new Account();
-    String correctPin = "1234";
+    Account account = new Account("Edwin Aboje","12345","1");
 
     @BeforeEach
     public void startwith() {
-        Account account = new Account();
+        Account account = new Account("Edwin Aboje", "12345", "1");
     }
 
     @Test
@@ -80,11 +79,9 @@ public class AccountTest {
     }
 
     @Test
-    public void testThatAccountClassCanReturnAcoountNumber(){
+    public void testThatAccountClassCanReturnAccountNumber(){
         account.setAccountNumber("1");
         account.getAccountNumber();
         assertEquals("1", account.getAccountNumber());
     }
-
-
 }
