@@ -7,13 +7,10 @@ import static java.lang.System.exit;
 
 
 public class ATMMachine {
-    Scanner input = new Scanner(System.in);
     private static Bank firstBank = new Bank("firstBank");
-    private static Bank drizzyBank = new Bank("drizzyBank");
-    static Account accounts = new Account("Accountname","pin","Accountnumber");
-
     public static void main(String[] args) {
         displayMenu();
+
     }
 
 
@@ -42,8 +39,8 @@ public class ATMMachine {
             case '2': deposit(); break;
             case '3': withdraw(); break;
             case '4': transfer(); break;
-            case '5': checkBalance(); break;
-            case '6': updatePin(); break;
+            case '5': transferToOtherBanks(); break;
+            case '6': checkBalance(); break;
             case '7': exit(); break;
             default: display("Invalid input");displayMenu();
         }
@@ -57,17 +54,18 @@ public class ATMMachine {
 
     private static void updatePin() {
         System.out.print("This feature is under development");
+        displayMenu();
     }
 
     private static void checkBalance() {
         try{
-            Account account = firstBank.findAccount("accountNumber");
-            String accountNumber = input("Enter account number: ");
+            int accountnumber = inputNumber("Enter account number: ");
             String pin = input("Enter pin: ");
-            display(String.format("balance is %2.f", firstBank.checkBalance(accountNumber, pin)));
+            double balance = firstBank.checkBalance(accountnumber, pin);
+            display(String.format("Balance is %s", balance));
         }
         catch(Exception e){
-            display("Invalid input");
+            throw new IllegalArgumentException("Error :"+e.getMessage());
         }
         finally{
             displayMenu();
@@ -76,19 +74,16 @@ public class ATMMachine {
 
 
     private static void transfer() {
-        Account senderAccount = firstBank.findAccount("fromAccountNumber");
-        Account recieverAccount = firstBank.findAccount("toAccountNumber");
-
         try{
-            String sender = input("Enter sender account number: ");
-            String reciever = input("Enter receiver account number: ");
+            int sender = inputNumber("Enter sender account number: ");
+            int receiver = inputNumber("Enter receiver account number: ");
             String pin = input("Enter pin: ");
             double amount = Double.parseDouble(input("Enter amount: "));
-            firstBank.transfer(sender,pin,reciever,amount);
+            firstBank.transfer(sender,pin,receiver,amount);
             display("Transfer successful");
         }
         catch(Exception e){
-            display("Transfer failed");
+            display("Transfer failed"+e.getMessage());
         }
         finally {
             displayMenu();
@@ -96,10 +91,8 @@ public class ATMMachine {
     }
 
     private static void withdraw() {
-        Account account = firstBank.findAccount("accountNumber");
-
         try{
-            String accountNumber = input("Enter account number: ");
+            int accountNumber = inputNumber("Enter account number: ");
             Double amount = Double.valueOf(input("Enter an amount: "));
             String pin = input("Enter pin: ");
             firstBank.withdraw(accountNumber, amount, pin);
@@ -115,8 +108,8 @@ public class ATMMachine {
 
     private static void deposit() {
         try {
-            double amount = Double.parseDouble(input(" Enter amount: "));
-            String accountnumber = input(" Enter account number: ");
+            double amount = Double.parseDouble(input("Enter amount: "));
+            int accountnumber = inputNumber("Enter account number: ");
             firstBank.deposit(accountnumber, amount);
             display("Deposited " + amount + " to " + accountnumber);
         }
@@ -132,23 +125,35 @@ public class ATMMachine {
         Scanner input = new Scanner(System.in);
         return input.nextLine().trim();
     }
+    public static int inputNumber(String prompt){
+        display(prompt);
+        Scanner input = new Scanner(System.in);
+        return input.nextInt();
+    }
+
+    public static void transferToOtherBanks() {
+        display("This feature is under development");
+        displayMenu();
+    }
 
     private static void createAccount() {
         try{
             String fullName = input("Enter first name: ");
             String pin = input("Enter pin: ");
             firstBank.createAccount(fullName,pin);
-            display("Account created");
-            display(String.format("Account created: %s", accounts.getAccountNumber()));
+
+            int accountnumber = firstBank.generateAccountnumber();
+            Account account = new Account(accountnumber,fullName,pin);
+            display("Account created>>>");
+            display("Account number: " + account.getAccountNumber());
         }
         catch(Exception e){
-            display("Error creating account");
+            throw new IllegalArgumentException("Error :"+e.getMessage());
 
         }
         finally {
             displayMenu();
         }
-
     }
 
     private static void display(String text){

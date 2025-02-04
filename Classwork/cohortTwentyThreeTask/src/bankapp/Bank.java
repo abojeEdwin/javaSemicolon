@@ -1,69 +1,61 @@
 package bankapp;
-
-
 import java.util.ArrayList;
 
 public class Bank {
     private String bankName;
-    private int counter;
+    private int counter = 1;
 
-    private ArrayList<Account> accounts = new ArrayList<>();
+    private ArrayList<Account> accounts;
 
     public Bank(String bankName) {
         this.bankName = bankName;
         accounts = new ArrayList<>();
+    }
+
+    public int createAccount(String accountName, String pin) {
+        Account account = new Account(generateAccountnumber(), pin, accountName);
+        int newAccountNumber = account.getAccountNumber();
+        accounts.add(new Account(newAccountNumber,accountName,pin));
+        return newAccountNumber;
 
     }
 
-    public void createAccount(String accountName, String pin) {
-        accounts.add(new Account( accountName, pin,generateAccountnumber()));
+    public int generateAccountnumber() {
+       return counter++;
     }
 
-    public String generateAccountnumber() {
-        String number = "";
-        counter++;
-        number+=counter;
-        return number;
-    }
-
-    public void deposit(String accountNumber, double amount) {
-        Account account = findAccount(accountNumber);
+    public void deposit(int accountNumber, double amount) {
+        Account account = accounts.get(accountNumber);
         if(amount <= 0){
             throw new IllegalArgumentException("Amount cannot be negative or zero");
         }
-        if(account != null) {
-            account.deposit(amount);
+        if(account == null) {
+            throw new IllegalArgumentException("Account not found");
         }
+        account.deposit(amount);
     }
 
-    public Account findAccount(String accountNumber) {
-        if (accountNumber == null) {
-            throw new IllegalArgumentException(" Account not found");
-        }
-        if (accountNumber.isEmpty()) {
-            throw new IllegalArgumentException(" Account cannot be empty");
-        }
-        for (Account account : accounts) {
-            if (account.getAccountNumber().equals(accountNumber)) {
-                return account;
-            }
-        }
-        return null;
+    public Account findAccount(int accountnumber) {
+       Account account = accounts.get(accountnumber);
+       if(account == null) {
+           throw new IllegalArgumentException("Account not found");
+       }
+       return account;
 
     }
 
 
-    public double checkBalance(String accountNumber, String pin) {
+    public double checkBalance(int accountNumber, String pin) {
         Account account = findAccount(accountNumber);
 
-        if (accountNumber == null || pin == null) {
+        if (account == null || pin == null) {
             throw new IllegalArgumentException(" Account not found");
         }
         return account.checkBalance(pin);
     }
 
-    public void withdraw(String accountNumber, double amount , String pin) {
-        Account account = findAccount(accountNumber);
+    public void withdraw(int accountNumber, double amount , String pin) {
+        Account account = accounts.get(accountNumber);
         if(amount <= 0){
             throw new IllegalArgumentException("Amount cannot be negative or zero");
         }
@@ -76,7 +68,7 @@ public class Bank {
         account.withdraw(amount, pin);
     }
 
-    public void transfer(String fromAccountNumber, String senderPin,String toAccountNumber, double amount) {
+    public void transfer(int fromAccountNumber, String senderPin,int toAccountNumber, double amount) {
         Account senderAccount = findAccount(fromAccountNumber);
         Account recieverAccount = findAccount(toAccountNumber);
         if(senderAccount == null ||recieverAccount == null){
@@ -85,10 +77,10 @@ public class Bank {
         if(amount <= 0){
             throw new IllegalArgumentException("Amount cannot be negative or zero");
         }
-        if(senderAccount == recieverAccount){
+        if(senderAccount.equals(recieverAccount)){
             throw new IllegalArgumentException("Sender account already exists");
         }
-        if( recieverAccount == senderAccount){
+        if(recieverAccount.equals(senderAccount)){
             throw new IllegalArgumentException("Reciever account already exists");
         }
         senderAccount.withdraw(amount,senderPin);

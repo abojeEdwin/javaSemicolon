@@ -5,19 +5,17 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class AccountTest {
-    Account account = new Account("Edwin Aboje","12345","1");
+    Account account = new Account(1,"Edwin Aboje","12345");
 
     @BeforeEach
     public void startwith() {
-        Account account = new Account("Edwin Aboje", "12345", "1");
+        Account account = new Account(1, "Edwin Aboje","12345");
     }
 
     @Test
     public void testThatAccountClassCanDepositWithCorrectPin() {
-        String correctPin = "1234";
-        account.setPin(correctPin);
         account.deposit(10_000);
-        assertEquals(10_000,account.checkBalance(correctPin));
+        assertEquals(10_000,account.checkBalance("12345"));
     }
 
     @Test
@@ -28,23 +26,18 @@ public class AccountTest {
 
     @Test
     public void testThatAccountClassCanWithdraw() {
-        String correctPin = "1234";
-        account.setPin(correctPin);
         account.deposit(10_000);
-        assertEquals(10_000,account.checkBalance(correctPin));
+        assertEquals(10_000,account.checkBalance("12345"));
         String correctPin2 = "5678";
-        account.setPin(correctPin2);
-        account.withdraw(5_000,correctPin2);
-        assertEquals(5_000,account.checkBalance(correctPin2));
+        account.withdraw(5_000,"12345");
+        assertEquals(5_000,account.checkBalance("12345"));
     }
 
     @Test
     public void testThatAccountClassCannotWithdrawZeroNegativeAndHandlesIncorrectPinExceptions() {
-        String correctPin = "1234";
-        account.setPin(correctPin);
         String incorrectPin = "5678";
-       account.setPin(incorrectPin);
-        assertThrows(IllegalArgumentException.class, () -> account.withdraw(0,correctPin));
+        account.setPin(incorrectPin);
+        assertThrows(IllegalArgumentException.class, () -> account.withdraw(0,incorrectPin ));
     }
 
     @Test
@@ -55,22 +48,16 @@ public class AccountTest {
     }
     @Test
     public void testThatAccountClassCanDepositWithdrawAndReturnCorrectBalance() {
-        String correctPin = "1234";
-        account.setPin(correctPin);
         account.deposit(10_000_000);
-        assertEquals(10_000_000,account.checkBalance(correctPin));
-        String correctPin2 = "5678";
-        account.setPin(correctPin2);
-        account.withdraw(5_000_000,correctPin2);
-        assertEquals(5_000_000,account.checkBalance(correctPin2));
+        assertEquals(10_000_000,account.checkBalance("12345"));
+        account.withdraw(5_000_000,"12345");
+        assertEquals(5_000_000,account.checkBalance("12345"));
     }
 
     @Test
     public void testThatAccountClassCanUpdatePin(){
-        String oldPin = "1234";
-        account.setPin(oldPin);
         String newPin = "5678";
-        account.updatePin(oldPin,newPin);
+        account.updatePin("12345",newPin);
         account.setPin(newPin);
         account.deposit(1_000);
         assertEquals(1_000,account.checkBalance(newPin));
@@ -80,8 +67,24 @@ public class AccountTest {
 
     @Test
     public void testThatAccountClassCanReturnAccountNumber(){
-        account.setAccountNumber("1");
-        account.getAccountNumber();
-        assertEquals("1", account.getAccountNumber());
+        Account account = new Account(1,"Edwin Aboje","12345");
+        assertEquals(1, account.getAccountNumber());
+    }
+
+    @Test
+    public void testThatBankReturnsCorrectAccountNumber(){
+        Account account = new Account(1,"Edwin Aboje","12345");
+        Bank firstBank = new Bank("firstBank");
+        firstBank.findAccount(1);
+        assertEquals(1,account.getAccountNumber());
+
+    }
+
+    @Test
+    public void testThatAccountCanDepositAndReturnCorrectBalance() {
+        Bank firstBank = new Bank("firstBank");
+        Account firstAccount = new Account(1,"Edwin Aboje","1234");
+        firstBank.deposit(1,10_000);
+        assertEquals(10_000,firstAccount.checkBalance("1234"));
     }
 }

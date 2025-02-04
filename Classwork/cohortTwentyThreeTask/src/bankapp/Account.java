@@ -5,10 +5,13 @@ import java.util.Objects;
 public class Account {
     private double balance;
     private String pin;
-    private String accountNumber;
+    private int accountNumber;
     private String accountName;
 
-    public Account(String accountName, String pin, String accountNumber) {
+
+
+
+    public Account(int accountNumber,String accountName, String pin) {
         this.accountName = accountName;
         this.pin = pin;
         this.accountNumber = accountNumber;
@@ -18,7 +21,7 @@ public class Account {
         if(pin==null|| pin.isEmpty()){
             throw new IllegalArgumentException("Pin cannot be null or empty");
         }
-        this.pin = pin;
+         this.pin = pin;
     }
 
     public void deposit(double amount) {
@@ -32,7 +35,7 @@ public class Account {
         if(pin == null){
             throw new IllegalArgumentException("PIN cannot be null");
         }
-        if(!Objects.equals(this.pin, pin) || pin.isEmpty()) {
+        if(!this.pin.equals(pin)|| pin.isEmpty()) {
             throw new IllegalArgumentException("Invalid pin or pin cannot be empty");
         }
            return this.balance;
@@ -70,14 +73,8 @@ public class Account {
 
      }
 
-    public void setAccountNumber(String accountNumber) {
-        if(accountNumber == null || accountNumber.isEmpty()){
-            throw new IllegalArgumentException("Account number cannot be empty");
-        }
-        this.accountNumber = accountNumber;
+    public int getAccountNumber() {
+        return this.accountNumber;
     }
 
-    public String getAccountNumber() {
-        return accountNumber;
-    }
 }
