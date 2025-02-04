@@ -5,73 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d1643a1-f828-402e-b611-20965d9bb3ac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../MyStack/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/lib/apiguardian-api-1.1.2-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/lib/apiguardian-api-1.1.2-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/lib/apiguardian-api-1.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/lib/junit-jupiter-5.8.1-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/lib/junit-jupiter-5.8.1-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/lib/junit-jupiter-5.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/lib/junit-jupiter-api-5.8.1-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/lib/junit-jupiter-api-5.8.1-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/lib/junit-jupiter-api-5.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/lib/junit-jupiter-engine-5.8.1-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/lib/junit-jupiter-engine-5.8.1-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/lib/junit-jupiter-engine-5.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/lib/junit-jupiter-params-5.8.1-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/lib/junit-jupiter-params-5.8.1-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/lib/junit-jupiter-params-5.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/lib/junit-platform-commons-1.8.1-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/lib/junit-platform-commons-1.8.1-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/lib/junit-platform-commons-1.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/lib/junit-platform-engine-1.8.1-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/lib/junit-platform-engine-1.8.1-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/lib/junit-platform-engine-1.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/lib/opentest4j-1.2.0-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/lib/opentest4j-1.2.0-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyStack/lib/opentest4j-1.2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/lib/apiguardian-api-1.1.2-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/lib/apiguardian-api-1.1.2-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/lib/apiguardian-api-1.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/lib/junit-jupiter-5.8.1-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/lib/junit-jupiter-5.8.1-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/lib/junit-jupiter-5.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/lib/junit-jupiter-api-5.8.1-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/lib/junit-jupiter-api-5.8.1-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/lib/junit-jupiter-api-5.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/lib/junit-jupiter-engine-5.8.1-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/lib/junit-jupiter-engine-5.8.1-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/lib/junit-jupiter-engine-5.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/lib/junit-jupiter-params-5.8.1-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/lib/junit-jupiter-params-5.8.1-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/lib/junit-jupiter-params-5.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/lib/junit-platform-commons-1.8.1-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/lib/junit-platform-commons-1.8.1-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/lib/junit-platform-commons-1.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/lib/junit-platform-engine-1.8.1-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/lib/junit-platform-engine-1.8.1-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/lib/junit-platform-engine-1.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/lib/opentest4j-1.2.0-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/lib/opentest4j-1.2.0-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myLinkedList/lib/opentest4j-1.2.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyQueue/src/dsa/MyQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyQueue/src/dsa/MyQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyQueue/testQueue/dsa/MyQueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyQueue/testQueue/dsa/MyQueueTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyStack/src/dsa/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyStack/src/dsa/MyStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyStack/test/dsa/MyStackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyStack/test/dsa/MyStackTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../myLinkedList/src/dsa/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myLinkedList/src/dsa/MyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../myLinkedList/src/dsa/MyLinkedListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myLinkedList/src/dsa/MyLinkedListNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../myLinkedList/testMyLinkedList/dsa/MyLinkedListNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../myLinkedList/testMyLinkedList/dsa/MyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myLinkedList/testMyLinkedList/dsa/MyLinkedListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cohortTwentyThreeTask/src/bankapp/ATMMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cohortTwentyThreeTask/src/bankapp/ATMMachine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../PhaseGate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PhaseGate/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,8 +82,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.117" />
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.117" />
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.153" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.153" />
       </set>
     </attachedChunks>
   </component>
@@ -164,6 +98,7 @@
       <workItem from="1737692283483" duration="1431000" />
       <workItem from="1737744803002" duration="1413000" />
       <workItem from="1737798316793" duration="796000" />
+      <workItem from="1738429072168" duration="4427000" />
     </task>
     <servers />
   </component>

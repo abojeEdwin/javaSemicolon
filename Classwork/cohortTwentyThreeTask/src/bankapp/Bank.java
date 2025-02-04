@@ -55,15 +55,9 @@ public class Bank {
     }
 
     public void withdraw(int accountNumber, double amount , String pin) {
-        Account account = accounts.get(accountNumber);
-        if(amount <= 0){
-            throw new IllegalArgumentException("Amount cannot be negative or zero");
-        }
+        Account account = findAccount(accountNumber);
         if(account == null){
             throw new IllegalArgumentException(" Account not found");
-        }
-        if(pin == null){
-            throw new IllegalArgumentException(" PIN cannot be null");
         }
         account.withdraw(amount, pin);
     }

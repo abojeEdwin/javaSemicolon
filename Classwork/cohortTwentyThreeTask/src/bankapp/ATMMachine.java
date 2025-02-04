@@ -1,6 +1,4 @@
 package bankapp;
-
-import java.util.ArrayList;
 import java.util.Scanner;
 
 import static java.lang.System.exit;
@@ -93,13 +91,13 @@ public class ATMMachine {
     private static void withdraw() {
         try{
             int accountNumber = inputNumber("Enter account number: ");
-            Double amount = Double.valueOf(input("Enter an amount: "));
+            double amount = inputDouble("Enter an amount: ");
             String pin = input("Enter pin: ");
             firstBank.withdraw(accountNumber, amount, pin);
             display("withdraw successful");
         }
         catch(Exception e){
-            display("withdraw failed");
+            display("withdraw failed " + e.getMessage());
         }
         finally{
             displayMenu();
@@ -107,15 +105,16 @@ public class ATMMachine {
     }
 
     private static void deposit() {
+        double amount = 0;
         try {
-            double amount = Double.parseDouble(input("Enter amount: "));
+            amount = inputDouble("Enter amount: ");
             int accountnumber = inputNumber("Enter account number: ");
             firstBank.deposit(accountnumber, amount);
-            display("Deposited " + amount + " to " + accountnumber);
-        }
-        catch (IllegalArgumentException e){display("Invalid input");
-        }
-        finally {
+            display("Deposited " +  amount + " to " + accountnumber);
+        } catch (IllegalArgumentException e) {
+            display("Invalid input"+ e.getMessage());
+        } finally {
+            display("Deposit successful");
             displayMenu();
         }
     }
@@ -129,6 +128,11 @@ public class ATMMachine {
         display(prompt);
         Scanner input = new Scanner(System.in);
         return input.nextInt();
+    }
+    public static double inputDouble(String prompt){
+        display(prompt);
+        Scanner input = new Scanner(System.in);
+        return input.nextDouble();
     }
 
     public static void transferToOtherBanks() {

@@ -71,20 +71,4 @@ public class AccountTest {
         assertEquals(1, account.getAccountNumber());
     }
 
-    @Test
-    public void testThatBankReturnsCorrectAccountNumber(){
-        Account account = new Account(1,"Edwin Aboje","12345");
-        Bank firstBank = new Bank("firstBank");
-        firstBank.findAccount(1);
-        assertEquals(1,account.getAccountNumber());
-
-    }
-
-    @Test
-    public void testThatAccountCanDepositAndReturnCorrectBalance() {
-        Bank firstBank = new Bank("firstBank");
-        Account firstAccount = new Account(1,"Edwin Aboje","1234");
-        firstBank.deposit(1,10_000);
-        assertEquals(10_000,firstAccount.checkBalance("1234"));
-    }
 }

@@ -41,7 +41,7 @@ public class Account {
            return this.balance;
     }
 
-    public void withdraw(double amount, String pin) throws IllegalArgumentException {
+    public void withdraw(double amount, String pin) {
        if(!pin.equals(this.pin)){
            throw new IllegalArgumentException("Invalid pin");
        }
