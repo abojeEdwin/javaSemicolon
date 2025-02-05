@@ -1,7 +1,5 @@
 package bankapp;
 
-import java.util.Objects;
-
 public class Account {
     private double balance;
     private String pin;

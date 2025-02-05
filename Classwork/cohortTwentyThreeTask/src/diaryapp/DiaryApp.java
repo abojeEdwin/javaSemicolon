@@ -10,6 +10,7 @@ public class DiaryApp {
     static Diaries diaries = new Diaries("userName", "Password");
     static Diary diary = new Diary("userName","Password", 0);
     static private Entry entry ;
+    String Name;
 
     public static void main(String[] args) {
         displayDiary();
