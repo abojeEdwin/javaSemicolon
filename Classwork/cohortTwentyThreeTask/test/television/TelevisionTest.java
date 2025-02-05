@@ -19,10 +19,10 @@ public class TelevisionTest {
         }
 
         @Test
-        public void testThatTelevisionCanComeOff(){
+        public void testThatTelevisionCanGoOnAndOff(){
             television.turnOn();
             television.turnOff();
-            assertTrue(television.turnOff());
+            assertFalse(television.isOn());
         }
 
         @Test
@@ -87,7 +87,7 @@ public class TelevisionTest {
         }
 
         @Test
-        public void testThatTeleVisionDoesNotChangeChannelAndChannelWhenOff(){
+        public void testThatTelevisionDoesNotChangeChannelWhenOff(){
             television.channelUp();
             television.channelUp();
             assertEquals(0,television.getChannelLevel());
@@ -98,5 +98,67 @@ public class TelevisionTest {
            television.turnOn();
            for(int i = 0; i >= 40 ; i++)
             assertEquals(0,television.getVolumeLevel());
+        }
+
+        @Test
+        public void testThatTelevisionReturnsCorrectValuesWhenTurnedOnIncreasedVolumeTurnedOffMutedAndUnmuted(){
+            television.turnOn();
+            television.increaseVolume();
+            television.increaseVolume();
+            television.increaseVolume();
+            television.turnOff();
+            television.turnOn();
+            television.mute();
+            television.unMute();
+            assertEquals(3,television.getVolumeLevel());
+
+        }
+
+        @Test
+        public void testThatTelevisionDoesNotReduceVolumeBelowZero(){
+            television.turnOn();
+            television.increaseVolume();
+            television.increaseVolume();
+            television.increaseVolume();
+            television.decreaseVolume();
+            television.decreaseVolume();
+            television.decreaseVolume();
+            television.decreaseVolume();
+            television.decreaseVolume();
+            television.decreaseVolume();
+            assertEquals(0,television.getVolumeLevel());
+        }
+
+        @Test
+        public void testThatTelevisionCanChangeChannelDown(){
+            television.turnOn();
+            television.channelUp();
+            television.channelUp();
+            television.channelDown();
+            assertEquals(1,television.getChannelLevel());
+        }
+
+        @Test
+        public void testThatTelevisionDoesNotChangeChannelBelowZero(){
+            television.turnOn();
+            television.channelUp();
+            television.channelUp();
+            television.channelDown();
+            television.channelDown();
+            television.channelDown();
+            assertEquals(0,television.getChannelLevel());
+        }
+
+        @Test
+        public void testThatTelevisionCanChangeChannelUpSetChannelDownChannelUpAndReturnCorrectValue(){
+            television.turnOn();
+            television.channelUp();
+            television.channelUp();
+            television.setChannel(77);
+            television.channelDown();
+            television.channelDown();
+            television.channelDown();
+            television.channelUp();
+            assertEquals(75,television.getChannelLevel());
         }
 }

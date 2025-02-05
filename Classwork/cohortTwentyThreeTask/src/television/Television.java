@@ -1,24 +1,28 @@
 package television;
 
 public class Television {
-        private boolean isOn = false;
+        private boolean isOn;
         private int volumeLevel = 0;
         private int channelLevel = 0;
         private int previousVolumeState = 0;
 
+    public boolean isOn() {
+        return isOn;
+    }
 
     public boolean turnOn() {return isOn = true;}
 
-    public boolean turnOff() {return isOn;}
+    public boolean turnOff() {return isOn = false;}
 
     public void increaseVolume() {
-        if(isOn) {this.volumeLevel++;}
-        if(this.volumeLevel >= 0 && this.volumeLevel < 30){this.volumeLevel++;}
+        if(isOn && this.volumeLevel >= 0 && this.volumeLevel < 30){this.volumeLevel++;}
     }
 
     public int getVolumeLevel() {return volumeLevel;}
 
-    public void decreaseVolume() {this.volumeLevel--;}
+    public void decreaseVolume() {
+        this.volumeLevel--;
+        if(this.volumeLevel < 0)this.volumeLevel = 0;}
 
     public int setChannel(int channel){if (isOn){return this.channelLevel = channel;} else {return this.channelLevel = 0;}}
 
@@ -31,4 +35,10 @@ public class Television {
     public  void unMute() {if(turnOn()) {volumeLevel = previousVolumeState ;}}
 
 
+    public void channelDown() {
+        if(isOn && this.channelLevel < 0){
+            this.channelLevel = 0;
+        }
+        if(isOn && this.channelLevel >0 && this.channelLevel <= 101){this.channelLevel--;}
+    }
 }
