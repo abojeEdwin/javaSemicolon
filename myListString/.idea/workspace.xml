@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ba2ab725-eda4-4423-8784-cfdaae2a8ff2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Classwork/MyQueue/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Classwork/MyQueue/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Classwork/MyQueue/src/dsa/MyQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Classwork/MyQueue/testQueue/dsa/MyQueueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Classwork/myListString/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Classwork/myListString/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Classwork/mySet/src/dsa/MySet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Classwork/mySet/testMySet/dsa/MySetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AirConditioner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AirconditionerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classwork/Classwork.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/Classwork.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PhaseGate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PhaseGate/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/MyQueue/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/MyQueue/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/apiguardian-api-1.1.2-javadoc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/apiguardian-api-1.1.2-javadoc.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/apiguardian-api-1.1.2-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/apiguardian-api-1.1.2-sources.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/apiguardian-api-1.1.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/apiguardian-api-1.1.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hamcrest-core-1.3-javadoc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/hamcrest-core-1.3-javadoc.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hamcrest-core-1.3-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/hamcrest-core-1.3-sources.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hamcrest-core-1.3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/hamcrest-core-1.3.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/junit-4.13.1-javadoc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/junit-4.13.1-javadoc.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/junit-4.13.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/junit-4.13.1-sources.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/junit-4.13.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/junit-4.13.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/junit-jupiter-5.8.1-javadoc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/junit-jupiter-5.8.1-javadoc.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/junit-jupiter-5.8.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/junit-jupiter-5.8.1-sources.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/junit-jupiter-5.8.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/junit-jupiter-5.8.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/junit-jupiter-api-5.8.1-javadoc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/junit-jupiter-api-5.8.1-javadoc.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/junit-jupiter-api-5.8.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/junit-jupiter-api-5.8.1-sources.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/junit-jupiter-api-5.8.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/junit-jupiter-api-5.8.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/junit-jupiter-engine-5.8.1-javadoc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/junit-jupiter-engine-5.8.1-javadoc.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/junit-jupiter-engine-5.8.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/junit-jupiter-engine-5.8.1-sources.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/junit-jupiter-engine-5.8.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/junit-jupiter-engine-5.8.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/junit-jupiter-params-5.8.1-javadoc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/junit-jupiter-params-5.8.1-javadoc.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/junit-jupiter-params-5.8.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/junit-jupiter-params-5.8.1-sources.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/junit-jupiter-params-5.8.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/junit-jupiter-params-5.8.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/junit-platform-commons-1.8.1-javadoc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/junit-platform-commons-1.8.1-javadoc.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/junit-platform-commons-1.8.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/junit-platform-commons-1.8.1-sources.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/junit-platform-commons-1.8.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/junit-platform-commons-1.8.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/junit-platform-engine-1.8.1-javadoc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/junit-platform-engine-1.8.1-javadoc.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/junit-platform-engine-1.8.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/junit-platform-engine-1.8.1-sources.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/junit-platform-engine-1.8.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/junit-platform-engine-1.8.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/opentest4j-1.2.0-javadoc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/opentest4j-1.2.0-javadoc.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/opentest4j-1.2.0-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/opentest4j-1.2.0-sources.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/opentest4j-1.2.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/lib/opentest4j-1.2.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myListString.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myListStringTest/dsa/MyListStringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/myListStringTest/dsa/MyListStringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dsa/MyListString.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/myListString/src/dsa/MyListString.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2rzJAJhm5k6uJANWow9PQNNfObh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;JUnit.MyListStringTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyListStringTest.testThatListCanTakeItemsAfterClearing.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyListStringTest.testThatMyListAddFunctionalityAndIsContainedWorksWell.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyListStringTest.testThatMyListCanAddABCDAndRemoveA.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyListStringTest.testThatMyListCanAddOneElement.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyListStringTest.testThatMyListCanClearAllElements.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyListStringTest.testThatMyListCanRemoveOneElement.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyListStringTest.testThatMyListCanTakeOneElement.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyListStringTest.testThatMyListCanTakeTwoElements.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyListStringTest.testThatMyListContainsElement.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyListStringTest.testThatMyListContainsOneElement.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyListStringTest.testThatMyListIsEmpty.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyListStringTest.testThatMyListReturnItemIndex.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyListStringTest.testThatMyListReturnsItemIndex.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyListStringTest.testThatMyListSizeLimit.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/omachoko/javaSemicolon/myListString/src/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/myListStringTest" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="dsa" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MyListStringTest.testThatMyListCanAddABCDAndRemoveA">
+    <configuration name="MyListStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myListString" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dsa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dsa" />
+      <option name="MAIN_CLASS_NAME" value="dsa.MyListStringTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyListStringTest.testThatListCanTakeItemsAfterClearing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myListString" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dsa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dsa" />
+      <option name="MAIN_CLASS_NAME" value="dsa.MyListStringTest" />
+      <option name="METHOD_NAME" value="testThatListCanTakeItemsAfterClearing" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyListStringTest.testThatMyListCanAddABCDAndRemoveA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myListString" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dsa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dsa" />
+      <option name="MAIN_CLASS_NAME" value="dsa.MyListStringTest" />
+      <option name="METHOD_NAME" value="testThatMyListCanAddABCDAndRemoveA" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyListStringTest.testThatMyListCanClearAllElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myListString" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dsa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dsa" />
+      <option name="MAIN_CLASS_NAME" value="dsa.MyListStringTest" />
+      <option name="METHOD_NAME" value="testThatMyListCanClearAllElements" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyListStringTest.testThatMyListSizeLimit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myListString" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dsa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dsa" />
+      <option name="MAIN_CLASS_NAME" value="dsa.MyListStringTest" />
+      <option name="METHOD_NAME" value="testThatMyListSizeLimit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MyListStringTest.testThatMyListCanAddABCDAndRemoveA" />
+        <item itemvalue="JUnit.MyListStringTest.testThatListCanTakeItemsAfterClearing" />
+        <item itemvalue="JUnit.MyListStringTest.testThatMyListCanClearAllElements" />
+        <item itemvalue="JUnit.MyListStringTest.testThatMyListSizeLimit" />
+        <item itemvalue="JUnit.MyListStringTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.117" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.117" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ba2ab725-eda4-4423-8784-cfdaae2a8ff2" name="Changes" comment="" />
+      <created>1737555832160</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737555832160</updated>
+      <workItem from="1737555833729" duration="23149000" />
+      <workItem from="1737617864538" duration="1169000" />
+      <workItem from="1737626522853" duration="335000" />
+      <workItem from="1737687049975" duration="676000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

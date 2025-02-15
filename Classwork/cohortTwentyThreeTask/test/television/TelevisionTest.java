@@ -10,7 +10,11 @@ public class TelevisionTest {
 
         @BeforeEach
         void setUp() {
-            Television television = new Television();
+            television = new Television();
+        }
+        @Test
+        public void testThatTelevisionIsOff(){
+            assertFalse(television.isOn());
         }
 
         @Test

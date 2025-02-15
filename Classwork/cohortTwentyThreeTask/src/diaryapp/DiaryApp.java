@@ -1,16 +1,12 @@
 package diaryapp;
-
-import java.util.ArrayList;
 import java.util.Scanner;
-
-import static java.lang.System.exit;
 
 public class DiaryApp {
 
     static Diaries diaries = new Diaries("userName", "Password");
     static Diary diary = new Diary("userName","Password", 0);
     static private Entry entry ;
-    String Name;
+
 
     public static void main(String[] args) {
         displayDiary();
@@ -24,7 +20,7 @@ public class DiaryApp {
                 3-> Delete
                """;
 
-        display("Enter a number : ");
+        //display("Enter a number : ");
         char inputChar = input(prompt).charAt(0);
         switch (inputChar) {
             case '1': addDiaries(); break;
@@ -93,7 +89,6 @@ public class DiaryApp {
                 7 -> Exit               \s
                
                 """;
-        display("Enter a number :");
         char prompt = input(menu).charAt(0);
         switch (prompt) {
             case '1': lockDiary(); break;

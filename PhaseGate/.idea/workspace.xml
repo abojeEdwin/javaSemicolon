@@ -5,19 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="741074a5-3ee1-4fbf-8765-719bc30623c8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Classwork/AirConditioner/AirConditioner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/AirConditioner/AirConditioner.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classwork/AirConditioner/airconditionTest/AirConditinerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/AirConditioner/airconditionTest/AirConditinerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classwork/AirConditioner/src/airConditionerTest/Airconditioner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/AirConditioner/src/airConditionerTest/Airconditioner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kata/Kata.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kata/Kata.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kata/dynamiteKata/dynamiteKata.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Kata/dynamiteKata/dynamiteKata.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Kata/functionSnacks/SubtractFunc.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Kata/functionSnacks/SubtractFunc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldSnacks/SchoolGradingSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/oldSnacks/SchoolGradingSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PhaseGate/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SnacksAssignment/EnergyNeeded.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SnacksAssignment/EnergyNeeded.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SnacksAssignment/GasMilage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SnacksAssignment/GasMilage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SnacksAssignment/Grades.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SnacksAssignment/Grades.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SnacksAssignment/SalesCommission.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SnacksAssignment/SalesCommission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AirConditioner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AirconditionerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classwork/Classwork.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Classwork/Classwork.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/apiguardian-api-1.1.2-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/apiguardian-api-1.1.2-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/apiguardian-api-1.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/hamcrest-core-1.3-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/hamcrest-core-1.3-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/hamcrest-core-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/junit-4.13.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/junit-4.13.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/junit-4.13.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/junit-jupiter-5.8.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/junit-jupiter-5.8.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/junit-jupiter-5.8.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/junit-jupiter-api-5.8.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/junit-jupiter-api-5.8.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/junit-jupiter-api-5.8.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/junit-jupiter-engine-5.8.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/junit-jupiter-engine-5.8.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/junit-jupiter-engine-5.8.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/junit-jupiter-params-5.8.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/junit-jupiter-params-5.8.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/junit-jupiter-params-5.8.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/junit-platform-commons-1.8.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/junit-platform-commons-1.8.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/junit-platform-commons-1.8.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/junit-platform-engine-1.8.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/junit-platform-engine-1.8.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/junit-platform-engine-1.8.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/opentest4j-1.2.0-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/opentest4j-1.2.0-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/lib/opentest4j-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/myListString.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/myListStringTest/dsa/MyListStringTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myListString/src/dsa/MyListString.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +95,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1737617861232</updated>
-      <workItem from="1737617865278" duration="633000" />
+      <workItem from="1737617865278" duration="639000" />
     </task>
     <servers />
   </component>
