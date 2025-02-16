@@ -25,6 +25,7 @@ public class MyQueueTest {
         myQueue.enterQueue(6);
         myQueue.enterQueue(7);
         myQueue.enterQueue(8);
+        assertEquals(4,myQueue.size());
     }
     @Test
     public void testThatMyQueueCanDisplayElementInQueue(){

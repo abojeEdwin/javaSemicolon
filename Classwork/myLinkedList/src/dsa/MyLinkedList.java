@@ -2,11 +2,13 @@ package dsa;
 
 public class MyLinkedList {
     MyLinkedListNode head;
+    private int size = 0;
 
     public void insertItem(int data) {
         MyLinkedListNode node = new MyLinkedListNode();
         node.data = data;
         node.next = null;
+        size++;
 
         if (head == null) {
             head = node;
@@ -35,14 +37,14 @@ public class MyLinkedList {
         node.next = null;
         node.next = head;
         head = node;
+        size++;
     }
 
     public void insertAt(int index, int data) {
         MyLinkedListNode node = new MyLinkedListNode();
         node.data = data;
         node.next = null;
-
-
+        size++;
         if (index == 0) {
          insertAtStart(data);
          return;
@@ -68,6 +70,11 @@ public class MyLinkedList {
             prev = start.next;
             start.next = prev.next;
             prev = null;
+            size--;
         }
+    }
+
+    public int getSize() {
+        return this.size;
     }
 }

@@ -1,9 +1,9 @@
 package dsa;
 
 public class MyStack {
-    int stack [] = new int [6];
-    int size = 0;
-    int top = 0;
+   private int stack [] = new int [6];
+    private int size = 0;
+    private int top = 0;
 
     public boolean isEmpty() {
         return size == 0;
@@ -11,7 +11,7 @@ public class MyStack {
 
     public void push(int item) {
         if(isFull()) {
-            System.out.println("Stack is full");
+            throw new IllegalArgumentException("Stack is full");
         }else{
             stack[top++] = item;
             size++;
@@ -21,7 +21,7 @@ public class MyStack {
     public int pop() {
         int item = 0;
         if (isEmpty()) {
-            System.out.println("Stack is empty");
+            throw new IllegalArgumentException("Stack is empty");
         } else {
             top--;
             item = stack[top];
@@ -52,5 +52,9 @@ public class MyStack {
 
     public boolean isFull() {
         return size == stack.length;
+    }
+
+    public int getSize(){
+        return this.size;
     }
 }

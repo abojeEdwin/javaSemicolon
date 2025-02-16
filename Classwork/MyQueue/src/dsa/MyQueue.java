@@ -4,8 +4,8 @@ public class MyQueue {
 
     int queue[] = new int[5];
     private int size = 0;
-    int head;
-    int tail;
+    private int head;
+    private int tail;
 
     public boolean isEmpty() {
         return size() == 0;
@@ -21,7 +21,7 @@ public class MyQueue {
             size++;
         }
         else {
-            System.out.println("Queue is full");
+            throw new IllegalArgumentException("Queue is full");
         }
     }
 
@@ -37,7 +37,7 @@ public class MyQueue {
                 head = head + 1 % 5;
                 size--;
         }
-        else System.out.println("Queue is empty");
+        else throw new IllegalArgumentException("Queue is empty");
         return item;
     }
 

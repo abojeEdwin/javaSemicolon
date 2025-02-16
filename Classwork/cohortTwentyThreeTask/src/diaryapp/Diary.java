@@ -6,11 +6,10 @@ public class Diary {
     private String userName;
     private int id;
     private String password;
-    boolean isLocked;
+    private boolean isLocked;
     private ArrayList<Entry> entries;
 
     public Diary(String userName, String password,int id) {
-       setPassword(password);
         this.userName = userName;
         isLocked = false;
         this.entries = new ArrayList<>();
@@ -36,10 +35,6 @@ public class Diary {
            throw new NullPointerException("User name cannot be empty");
         }
         this.userName = userName;
-    }
-
-    public void getPassword(String password) {
-        this.password = password;
     }
 
     public void setPassword(String password) {

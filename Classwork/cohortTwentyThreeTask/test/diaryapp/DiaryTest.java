@@ -63,6 +63,7 @@ public class DiaryTest {
         public void testThatDiaryCanUpdateEntry(){
             diary.createEntry("title","body",1);
             diary.updateEntry("title","body",1);
+            assertEquals(1,diary.getSize());
         }
 
         @Test

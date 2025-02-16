@@ -2,8 +2,8 @@ package dsa;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 
 public class MyStackTest {
@@ -33,7 +33,7 @@ public class MyStackTest {
         myStack.push(20);
         myStack.push(30);
         myStack.pop();
-        assertEquals(2,myStack.size());
+        assertEquals(2,myStack.getSize());
     }
 
 
@@ -60,7 +60,7 @@ public class MyStackTest {
         myStack.push(30);
         myStack.pop();
         myStack.pop();
-        assertEquals(1,myStack.size());
+        assertEquals(1,myStack.getSize());
     }
 
     @Test
@@ -79,13 +79,15 @@ public class MyStackTest {
         myStack.push(80);
         myStack.push(70);
         myStack.push(60);
-        myStack.isFull();
+        assertThrows(IllegalArgumentException.class , () -> myStack.
+                isFull());
 
     }
 
     @Test
     public void testThatMyStackHandlesExceptionWhenUserTrysToPopWhenEmpty(){
-        myStack.pop();
+        assertThrows(IllegalArgumentException.class, () -> myStack.
+                pop());
     }
 
 }
