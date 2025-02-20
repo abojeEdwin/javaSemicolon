@@ -56,7 +56,7 @@ public class MyStackTest {
     @Test
     public void testThatMyStackCanAddPopAndReturnCorrectSize(){
         myStack.push(10);
-        myStack.push(20);|
+        myStack.push(20);
         
         myStack.push(30);
         myStack.pop();

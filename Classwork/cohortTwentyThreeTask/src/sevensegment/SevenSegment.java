@@ -27,7 +27,7 @@ public class SevenSegment {
         return display(hex );
     }
     static char display(int hex){
-        return (hex & 1) == 1 ? '#' : '*';
+        return (hex & 1) == 1 ? '#' : ' ';
     }
 
     public static void main(String[] args){
@@ -46,27 +46,33 @@ public class SevenSegment {
                 "                "
         );
 
-        int zero = 0x30;
-        System.out.printf(
-            "\n %c%c\n",A(zero),A(zero));
-                System.out.printf(
-                    "%c  %c\n",F(zero),B(zero));
-        System.out.printf("""
-                """+
-                "%c  %c\n",F(zero),B(zero));
-        System.out.printf("""
-                """+
-                " %c%c\n",display(zero),display(zero));
-        System.out.printf("""
-                """+
-                "%c  %c\n",E(zero),C(zero));
-        System.out.printf("""
-                """+
-                "%c  %c\n",E(zero),C(zero));
-        System.out.printf("""
-                """+
-                " %c%c\n",D(zero),D(zero));
-                         
-                 
+        int num[] = {0x7E, 0x30 ,0x6D , 0x79 , 0x33 ,
+                    0x5B , 0X5F, 0x70 , 0x7F, 0x78
+                    };
+
+        int size = 10;
+        for(int i=0; i< size; i++) {
+            System.out.printf(
+                    "\n %c%c\n", A(num[i]), A(num[i]));
+            System.out.printf(
+                    "%c  %c\n", F(num[i]), B(num[i]));
+            System.out.printf("""
+                    """ +
+                    "%c  %c\n", F(num[i]), B(num[i]));
+            System.out.printf("""
+                    """ +
+                    " %c%c\n", display(num[i]), display(num[i]));
+            System.out.printf("""
+                    """ +
+                    "%c  %c\n", E(num[i]), C(num[i]));
+            System.out.printf("""
+                    """ +
+                    "%c  %c\n", E(num[i]), C(num[i]));
+            System.out.printf("""
+                    """ +
+                    " %c%c\n", D(num[i]), D(num[i]));
+            System.out.println();
+
+        }
  } 
 }
