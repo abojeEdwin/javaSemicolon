@@ -146,8 +146,8 @@ public class ATMMachine {
             String pin = input("Enter pin: ");
             firstBank.createAccount(fullName,pin);
 
-            int accountnumber = firstBank.generateAccountnumber();
-            Account account = new Account(accountnumber,fullName,pin);
+
+            Account account = new Account(firstBank.getAccountnumber(), fullName,pin);
             display("Account created>>>");
             display("Account number: " + account.getAccountNumber());
         }

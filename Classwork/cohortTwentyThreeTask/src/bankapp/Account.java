@@ -7,8 +7,6 @@ public class Account {
     private String accountName;
 
 
-
-
     public Account(int accountNumber,String accountName, String pin) {
         this.accountName = accountName;
         this.pin = pin;

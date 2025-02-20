@@ -7,28 +7,27 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class DiaryTest {
     Diary diary = new Diary("Edwin","12345",1);
+
     @BeforeEach
-        public void startWith(){
+
+    public void startWith(){
         Diary diary = new Diary("Edwin","12345",1);
         Diaries diaries = new Diaries("Edwin","12345");
-        }
+    }
 
-
-        @Test
-        public void testThatDiaryCanBeUnlocked(){
-           Diaries diaries = new Diaries("Edwin","12345");
-            diary.unlock("12345");
+    @Test
+    public void testThatDiaryCanBeUnlocked(){
+        Diaries diaries = new Diaries("Edwin","12345");
+        diary.unlock("12345");
         assertFalse(diary.isLocked());
+    }
 
-
-        }
-
-        @Test
+    @Test
         public void testThatDiaryIsLocked(){
         diary.lock();
         assertTrue(diary.isLocked());
     }
-        @Test
+    @Test
         public void testThatDiaryHandelsUnlockedException(){
         assertThrows(NullPointerException.class, ()->diary.unlock(null));
         }

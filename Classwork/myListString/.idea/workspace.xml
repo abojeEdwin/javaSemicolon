@@ -7,8 +7,8 @@
     <list default="true" id="1d1643a1-f828-402e-b611-20965d9bb3ac" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../MyStack/src/dsa/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyStack/src/dsa/MyStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MyStack/test/dsa/MyStackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyStack/test/dsa/MyStackTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../myLinkedList/src/dsa/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myLinkedList/src/dsa/MyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../myLinkedList/testMyLinkedList/dsa/MyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myLinkedList/testMyLinkedList/dsa/MyLinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../myListString/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../myListString/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,23 +26,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.MyListStringTest.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.MyListStringTest.testThatMyListIsEmpty.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.MyListStringTest.executor": "Run",
+    "JUnit.MyListStringTest.testThatMyListIsEmpty.executor": "Run",
+    "JUnit.MyListStringTest.testThatMyListReturnsItemIndex.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.MyListStringTest">
+}]]></component>
+  <component name="RunManager">
     <configuration name="MyListStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myListString" />
       <extension name="coverage">
@@ -74,8 +76,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyListStringTest.testThatMyListReturnsItemIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myListString" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dsa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dsa" />
+      <option name="MAIN_CLASS_NAME" value="dsa.MyListStringTest" />
+      <option name="METHOD_NAME" value="testThatMyListReturnsItemIndex" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyListStringTest.testThatMyListReturnsItemIndex" />
         <item itemvalue="JUnit.MyListStringTest" />
         <item itemvalue="JUnit.MyListStringTest.testThatMyListIsEmpty" />
       </list>
@@ -102,6 +121,10 @@
       <workItem from="1737798316793" duration="796000" />
       <workItem from="1738429072168" duration="4427000" />
       <workItem from="1739640223492" duration="30000" />
+      <workItem from="1739801580510" duration="1680000" />
+      <workItem from="1739806856816" duration="143000" />
+      <workItem from="1739813610430" duration="340000" />
+      <workItem from="1739814047479" duration="250000" />
     </task>
     <servers />
   </component>

@@ -33,10 +33,6 @@ public class MyStack {
 
     }
 
-    public int size(){
-        return size;
-    }
-
     public void display() {
         for(int item : stack) {
             System.out.print(item + " ");

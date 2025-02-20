@@ -56,7 +56,8 @@ public class MyStackTest {
     @Test
     public void testThatMyStackCanAddPopAndReturnCorrectSize(){
         myStack.push(10);
-        myStack.push(20);
+        myStack.push(20);|
+        
         myStack.push(30);
         myStack.pop();
         myStack.pop();
@@ -78,9 +79,7 @@ public class MyStackTest {
         myStack.push(90);
         myStack.push(80);
         myStack.push(70);
-        myStack.push(60);
-        assertThrows(IllegalArgumentException.class , () -> myStack.
-                isFull());
+        assertThrows(IllegalArgumentException.class , () -> myStack.push(22));
 
     }
 

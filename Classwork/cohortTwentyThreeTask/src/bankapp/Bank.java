@@ -4,6 +4,7 @@ import java.util.ArrayList;
 public class Bank {
     private String bankName;
     private int counter = 1;
+    private int accountNumber;
 
     private ArrayList<Account> accounts;
 
@@ -12,35 +13,35 @@ public class Bank {
         accounts = new ArrayList<>();
     }
 
-    public int createAccount(String accountName, String pin) {
-        Account account = new Account(generateAccountnumber(), pin, accountName);
-        int newAccountNumber = account.getAccountNumber();
-        accounts.add(new Account(newAccountNumber,accountName,pin));
-        return newAccountNumber;
-
+    public void createAccount(String accountName, String pin) {
+        accountNumber = counter++;
+        Account account = new Account(accountNumber, pin, accountName);
+        accounts.add(new Account(accountNumber,accountName,pin));
     }
 
-    public int generateAccountnumber() {
-       return counter++;
+    public int getAccountnumber() {
+       return this.accountNumber;
     }
 
     public void deposit(int accountNumber, double amount) {
-        Account account = accounts.get(accountNumber);
+        Account findAccount = findAccount(accountNumber);
+        int accountnum = findAccount.getAccountNumber();
+        findAccount.deposit(amount);
         if(amount <= 0){
             throw new IllegalArgumentException("Amount cannot be negative or zero");
         }
-        if(account == null) {
-            throw new IllegalArgumentException("Account not found");
-        }
-        account.deposit(amount);
+
     }
 
     public Account findAccount(int accountnumber) {
-       Account account = accounts.get(accountnumber);
-       if(account == null) {
-           throw new IllegalArgumentException("Account not found");
-       }
-       return account;
+      for(Account account : accounts){
+          if(account.getAccountNumber() == accountnumber){
+              return account;
+          }
+      }
+      return null;
+
+
 
     }
 
@@ -63,21 +64,14 @@ public class Bank {
     }
 
     public void transfer(int fromAccountNumber, String senderPin,int toAccountNumber, double amount) {
+        if( toAccountNumber == fromAccountNumber){
+            throw new IllegalArgumentException("Accounts cannot be the same");
+        }
         Account senderAccount = findAccount(fromAccountNumber);
         Account recieverAccount = findAccount(toAccountNumber);
-        if(senderAccount == null ||recieverAccount == null){
-            throw new IllegalArgumentException(" Account not found");
-        }
-        if(amount <= 0){
-            throw new IllegalArgumentException("Amount cannot be negative or zero");
-        }
-        if(senderAccount.equals(recieverAccount)){
-            throw new IllegalArgumentException("Sender account already exists");
-        }
-        if(recieverAccount.equals(senderAccount)){
-            throw new IllegalArgumentException("Reciever account already exists");
-        }
         senderAccount.withdraw(amount,senderPin);
         recieverAccount.deposit(amount);
+
+
     }
 }
