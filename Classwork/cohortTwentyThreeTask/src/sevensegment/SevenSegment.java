@@ -4,27 +4,27 @@ package sevensegment;
 public class SevenSegment {
 
 
-    static char displayA(int hex){
+    static char A(int hex){
         return ((hex >> 6) & 1) == 1 ? 'A' : '#';
     }
 
-    static char displayB(int hex){
+    static char B(int hex){
         return ((hex >> 5) & 1) == 1 ? 'B' : '#';
     }
-    static char displayC(int hex){
+    static char C(int hex){
         return ((hex >> 4) & 1) == 1 ? 'C' : '#';
     }
-    static char displayD(int hex){
+    static char D(int hex){
         return ((hex >> 3) & 1) == 1 ? 'D' : '#';
     }
-    static char displayE(int hex){
+    static char E(int hex){
         return ((hex >> 2) & 1) == 1 ? 'E' : '#';
     }
-    static char displayF(int hex){
-        return ((hex >> 1) & 1) == 1 ? 'F' : '#';
+    static char display(int hex){
+        return ((hex >> 1) & 1) == 1 ? '*' : '#';
     }
-    static char displayG(int hex){
-        return (hex & 1) == 1 ? 'G' : '#';
+    static char F(int hex){
+        return (hex & 1) == 1 ? '*' : '#';
     }
 
     public static void main(String[] args){
@@ -45,21 +45,24 @@ public class SevenSegment {
 
         int zero = 0x7E;
         System.out.printf(
-            "\n %c%c\n",displayA(zero),displayA(zero));
+            "\n %c%c\n",display(zero>> 6),display(zero>>6));
                 System.out.printf(
-                    "%c  %c\n",displayF(zero),displayB(zero));
+                    "%c  %c\n",display(zero>>1),display(zero>>5));
         System.out.printf("""
                 """+
-                "%c  %c\n",displayF(zero),displayB(zero));
+                "%c  %c\n",display(zero>>1),display(zero>>5));
         System.out.printf("""
                 """+
-                " %c%c\n",displayG(zero),displayG(zero));
+                " %c%c\n",display(zero),display(zero));
         System.out.printf("""
                 """+
-                "%c  %c\n",displayE(zero),displayC(zero));
+                "%c  %c\n",display(zero>>2),display(zero>>4));
         System.out.printf("""
                 """+
-                " %c%c\n",displayD(zero),displayD(zero));
+                "%c  %c\n",display(zero>>2),display(zero>>4));
+        System.out.printf("""
+                """+
+                " %c%c\n",display(zero>>3),display(zero>>3));
                          
                  
  } 
