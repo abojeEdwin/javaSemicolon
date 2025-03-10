@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class Course {
     private String courseName;
     private String courseCode;
-    private ArrayList<Student> students = new ArrayList<>();
+    private static ArrayList<Student> students = new ArrayList<>();
     private String facilitator;
     private HashMap<String,String> Grades = new HashMap<>();
 
@@ -45,8 +45,8 @@ public class Course {
         return ("No facilitator assigned or check your coursecode again") ;
     }
 
-    public void addStudent(Student student) {
-        this.students.add(student);
+    public static void addStudent(Student student) {
+        students.add(student);
     }
 
     public String getStudentList(String courseCode) {

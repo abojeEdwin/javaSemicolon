@@ -78,7 +78,7 @@ public class Student extends User{
         verifyEmail(email);
         if(courseCode.equals(course.getCourseCode())){
             courseList.add(courseCode);
-            course.addStudent(Student.this);
+            Course.addStudent(Student.this);
             return ("Course registered successfully");
         }else{ return ("Your course has not been added");
         }
