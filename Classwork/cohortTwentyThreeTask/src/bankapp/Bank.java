@@ -25,7 +25,6 @@ public class Bank {
 
     public void deposit(int accountNumber, double amount) {
         Account findAccount = findAccount(accountNumber);
-        int accountnum = findAccount.getAccountNumber();
         findAccount.deposit(amount);
         if(amount <= 0){
             throw new IllegalArgumentException("Amount cannot be negative or zero");

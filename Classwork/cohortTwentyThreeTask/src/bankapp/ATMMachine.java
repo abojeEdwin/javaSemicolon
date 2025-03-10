@@ -13,6 +13,7 @@ public class ATMMachine {
 
 
     private static void displayMenu() {
+        display("Enter a number:");
         String mainMenu ="""
                             Welcome to DizzyBank
                             
@@ -22,11 +23,9 @@ public class ATMMachine {
                             4 -> Transfer.
                             5 -> Transfer To Other Banks.
                             6 -> Check Balance.
-                            7 -> Update Pin
-                            8 -> Exit.
-                            
+                            7 -> Exit
+                         
                             """;
-        display("Enter a number:");
         char userInput = input(mainMenu).charAt(0);
         userChoice(userInput);
     }
