@@ -36,11 +36,21 @@ public class TestFacilitator {
          Student student = new Student("Fred Delvan","del@yahoo.com","Delvan@123");
          student.register("Fred Delvan","del@yahoo.com","Delvan@123");
          student.login("del@yahoo.com","Delvan@123");
-         student.registerCourse("del@yahoo.com","Statistics","STA322");
+         student.registerCourse("del@yahoo.com","Statistics","STA322","Mr Evans");
          facilitator.assignGrade("A","STA322");
          assertEquals("Course:STA322,Grade:A", facilitator.getGrade("STA322"));
+     }
 
-
+     @Test
+    public void testThatFacilitatorCanViewStudentTakingACourse(){
+         facilitator.register("Tesco Evans","tes@gmail.com","Ques123!");
+         facilitator.login("tes@gmail.com","Que123!");
+         facilitator.createCourse("Statistics","STA322","Mr Evans");
+         Student student = new Student("Fred Delvan","del@yahoo.com","Delvan@123");
+         student.register("Fred Delvan","del@yahoo.com","Delvan@123");
+         student.login("del@yahoo.com","Delvan@123");
+         student.registerCourse("del@yahoo.com","Statistics","STA322","Mr Evans");
+         assertEquals("[Fred Delvan]",facilitator.viewStudent("STA322"));
      }
 
 }

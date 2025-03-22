@@ -42,7 +42,7 @@ public class Course {
         if (courseCode.equals(this.courseCode)) {
             return this.facilitator;
         }
-        return ("No facilitator assigned or check your coursecode again") ;
+        return ("No facilitator assigned or check your course code again") ;
     }
 
     public static void addStudent(Student student) {
@@ -53,11 +53,16 @@ public class Course {
         ArrayList<String> studentname = new ArrayList<>();
             for(Student student : students){
                 if(courseCode.equals(this.courseCode)){
-                    studentname.add(student.fullName);
+                    studentname.add(student.getFullName());
                     return studentname.toString();
                 }
             }
         return null;
+    }
+
+    @Override
+    public String toString(){
+        return "Course Name :"+ courseName +"Course code : " + courseCode + "Course Facilitator : " + facilitator;
     }
 
 

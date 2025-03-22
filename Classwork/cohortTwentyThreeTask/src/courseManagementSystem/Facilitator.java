@@ -21,7 +21,11 @@ public class Facilitator extends User{
     }
 
     public String createCourse(String courseName,String courseCode,String facilitator) {
-        Course course = new Course(courseName,courseCode,facilitator);
+        Course course = new CourseBuilderClass()
+                .setCourseName(courseName)
+                .setCourseCode(courseCode)
+                .setFacilitator(facilitator)
+                .getCourse();
         courses.add(course);
         return ("Created Course " + course.getCourseName() + " with code " + course.getCourseCode() + " successfully");
     }
@@ -107,4 +111,11 @@ public class Facilitator extends User{
     }
 
 
+    public String viewStudent(String courseCode) {
+        for(Course course : courses){
+            return course.getStudentList(courseCode);
+        }
+        return null;
+    }
 }
+ 

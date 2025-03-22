@@ -3,12 +3,10 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.regex.*;
 import java.util.HashMap;
-import courseManagementSystem.Course;
-import courseManagementSystem.Facilitator;
 
 public class Student extends User{
     HashMap<String, String > emailPasswordMap = new HashMap<>();
-    static ArrayList<String> courseList = new ArrayList<String>();
+    static ArrayList<Course> courseList = new ArrayList<Course>();
 
     public Student(String name, String email, String password) {
         super(name, email, password);
@@ -72,12 +70,15 @@ public class Student extends User{
         return null;
     }
 
-    public String registerCourse(String email, String courseName,String courseCode) {
-        String facilitator = " ";
-        Course course = new Course(courseName,courseCode,facilitator);
+    public String registerCourse(String email, String courseName,String courseCode,String facilitator) {
+        Course course = new CourseBuilderClass()
+                .setCourseName(courseName)
+                .setCourseCode(courseCode)
+                .setFacilitator(facilitator)
+                .getCourse();
         verifyEmail(email);
         if(courseCode.equals(course.getCourseCode())){
-            courseList.add(courseCode);
+            courseList.add(course);
             Course.addStudent(Student.this);
             return ("Course registered successfully");
         }else{ return ("Your course has not been added");
@@ -85,28 +86,43 @@ public class Student extends User{
     }
 
     public String viewCourses() {
-        ArrayList<String> courses = new ArrayList<>();
-        for(String course : courseList){
-            courses.add(course);
-            return(courses.toString());
+        if(courseList.isEmpty()){
+            return "No courses found";
         }
-        return null;
+        StringBuilder courseString = new StringBuilder();
+        for(Course course : courseList){
+          courseString.append(course.getCourseCode())
+                  .append(",");
+        }
+        if(courseString.length() > 2){
+            courseString.setLength(courseString.length() - 1);
+        }
+        return courseString.toString();
     }
 
     public static String getCourseCode(){
-        for(String course : courseList){
-            return course;
+        for(Course course : courseList){
+            return course.getCourseCode();
         }
         return null;
     }
 
     public static String viewGrade(String studentCourseCode) {
-        for(String course : courseList){
-            if(course.equals(studentCourseCode)){
+        for(Course course : courseList){
+            if(course.getCourseCode().equals(studentCourseCode)){
                return Facilitator.getGrade(studentCourseCode);
             }
         }
        return ("Course not found");
+    }
+
+    public String viewCourseFacilitator(String courseCode) {
+        for(Course course : courseList){
+            if(course.getCourseCode().equals(courseCode)){
+                return course.getFacilitator();
+            }
+        }
+        return null;
     }
 }
 

@@ -52,19 +52,21 @@ public class TestStudentClass {
         facilitator.createCourse("Biology","Bio402","Mr Evans Okuwuru");
         assertEquals("Bio402",course.getCourseCode());
         student.register("Aboje Edwin","abojeedwin@gmail.com","Lovelife@14");
-        assertEquals("Course registered successfully",student.registerCourse("abojeedwin@gmail.com","Biology","Bio402"));
+        assertEquals("Course registered successfully",student.registerCourse("abojeedwin@gmail.com","Biology","Bio402","Mr Evans Okuwuru"));
     }
 
     @Test
     public void testThatStudentCanViewCoursesEnrolledFor(){
         Course course = new Course("Biology","Bio402","Mr Evans Okuwuru");
         Facilitator facilitator = new Facilitator("Mr Evans Okuwuro","evansflash@gmail.com","Test1234@");
+        facilitator.register("Mr Evans Okuwuru","evansflash@gmail.com","Test1234@");
         facilitator.createCourse("Biology","Bio402","Mr Evans Okuwuru");
         facilitator.createCourse("Statistics","STA322","Mr Francis");
         student.register("Aboje Edwin","abojeedwin@gmail.com","Lovelife@14");
-        student.registerCourse("abojeedwin@gmail.com","Biology","Bio402");
-        student.registerCourse("abojeedwin@gmail.com","Statistics","STA322");
-        assertEquals("[Bio402]",student.viewCourses());
+        student.registerCourse("abojeedwin@gmail.com","Biology","Bio402","Mr Francis");
+        student.registerCourse("abojeedwin@gmail.com","Statistics","STA322","Mr Francis");
+        student.registerCourse("abojeedwin@gmail.com","Chemistry","CHM322","Mr Francis");
+        assertEquals("Bio402,STA322,CHM322",student.viewCourses());
     }
 
     @Test
@@ -75,9 +77,21 @@ public class TestStudentClass {
         facilitator.createCourse("Economics","ECO420","Mr Evans Okuwuru");
         student.register("Marek Phil","maric@gmail.com","Maric123@");
         student.login("maric@gmail.com","Maric123@");
-        student.registerCourse("maric@gmail.com","Economics","ECO420");
+        student.registerCourse("maric@gmail.com","Economics","ECO420","Mr Evans Okuwuru");
         facilitator.assignGrade("B","ECO420");
         assertEquals("Course:ECO420,Grade:B",Student.viewGrade("ECO420"));
+    }
+
+    @Test
+    public void testThatStudentCanViewACourseFacilitator(){
+        Facilitator facilitator = new Facilitator("Jack Robinson","robjack@gmail.com","Test1234@");
+        facilitator.register("Jack Robinson","robjack@gmail.com","Test1234@");
+        facilitator.login("robjack@gmail.com","Test1234@");
+        facilitator.createCourse("Economics","ECO420","Mr Evans Okuwuru");
+        student.register("Marek Phil","maric@gmail.com","Maric123@");
+        student.login("maric@gmail.com","Maric123@");
+        student.registerCourse("maric@gmail.com","Economics","ECO420","Mr Evans Okuwuru");
+        assertEquals("Mr Evans Okuwuru",student.viewCourseFacilitator("ECO420"));
     }
 
 }

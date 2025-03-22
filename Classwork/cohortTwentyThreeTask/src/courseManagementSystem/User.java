@@ -1,9 +1,9 @@
 package courseManagementSystem;
 
 public class User {
-    String fullName;
-    String email;
-    String password;
+     String fullName;
+     String email;
+     String password;
 
     public User(String name, String email, String password) {
         this.fullName = name;
